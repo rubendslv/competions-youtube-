@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo2.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logo2.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logo2.png">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/souris.js"></script>
+    <script src="js/sang.js"></script>
+    <script src="js/titrePage.js"></script>
+    <script src="js/scrollHorizontal.js"></script>
+    <script src="js/screamer.js"></script>
+</head>
+<body>
+    <div class="ants-background">
+        <img src="img/fourmis2-1.png" alt="Fourmis Background">
+    </div>
+    <div class="ants-background-right">
+        <img src="img/fourmis.png" alt="Fourmis Background Right">
+    </div>
+    <div class="cigale-background">
+        <img src="img/cigale.png" alt="Cigale Background">
+    </div>
+    <div class="main-content">
+        <div class="grid-background">
+            <div class="content-section">
+                <div class="spiral-container">
+                    <img src="img/spirale.png" class="spiral-image" alt="Spirale">
+                </div>
+                <div class="video-container">
+                    <div id="player" class="w-full h-full"></div>
+                    <div id="redirect-overlay" class="hidden fixed inset-0 bg-black bg-opacity-95 flex items-center justify-center z-50">
+                        <div class="text-center text-white p-8 relative">
+                            <div class="absolute -top-20 left-1/2 transform -translate-x-1/2">
+                                <img src="img/hand-blood.png" class="w-32 h-32 object-contain transform rotate-180" alt="Blood">
+                            </div>
+                            <h2 class="text-4xl creepy-text mb-4 text-red-600">Pour voir la suite...</h2>
+                            <p class="mb-6 text-lg opacity-80">Rendez-vous sur la chaîne YouTube pour regarder la vidéo complète !</p>
+                            <a href="https://www.youtube.com/@LombreDesFables" target="_blank" 
+                               class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 hover:rotate-1">
+                                Voir la chaîne YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fixed-image-container">
+                <img src="img/nom-youtube.png" class="fixed-top-image" alt="Image fixe">
+            </div>
+            <div class="hand-blood-container">
+                <img src="img/hand-blood.png" class="hand-blood" alt="Main ensanglantée">
+            </div>
+            <div class="pate-background">
+                <img src="img/pate.png" alt="Pate Background">
+            </div>
+        </div>
+
+        <div class="shorts-container">
+            <div class="shorts-knife-container">
+                <img src="img/couteau.png" class="shorts-knife" alt="Couteau ensanglanté">
+            </div>
+            <div class="shorts-grid">
+                <div class="short-video" onclick="window.open('https://www.youtube.com/shorts/tQ_AkLMf_O8', '_blank')">
+                    <div class="video-placeholder">
+                        <div class="video-thumbnail">
+                            <img src="https://i.ytimg.com/vi/tQ_AkLMf_O8/hqdefault.jpg" alt="Short 1" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                <div class="short-video" onclick="window.open('https://www.youtube.com/shorts/XtBGNmQ_LSE', '_blank')">
+                    <div class="video-placeholder">
+                        <div class="video-thumbnail">
+                            <img src="https://i.ytimg.com/vi/XtBGNmQ_LSE/hqdefault.jpg" alt="Short 2" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="legal-text">
+                <a href="mentions.html" class="legal-link">Mentions légales</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/youtube.js"></script>
+</body>
+</html>
